@@ -1,9 +1,23 @@
 
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+
+.title-main{
+    color:#381DBF;
+    font-size: 3.5vw;
+}
+
+.main-title{
+    color:#381DBF;
+    font-size: 4vw;
+    font-weight: 1900;
+}
 
 .title-name{
     color:#381DBF
 }
 
 .title-desc{
-    color:#99CCFF
+    color:#034b93
 }
