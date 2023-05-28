@@ -99,11 +99,11 @@ https://templatemo.com/tm-559-zay-shop
                                             <li class="list-inline-item">Model Number :
                                                 <input type="hidden" name="product-size" id="product-size" value="S">
                                             </li>
-                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="500" data-cap="750" data-gross="1000">REACT 750</h6></li>
-                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="750" data-cap="1000" data-gross="2000">REACT 1000</h6></li>
-                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="1500" data-cap="1500" data-gross="2000">REACT 2000</h6></li>
-                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="2000" data-cap="2500" data-gross="2500">REACT 2500</h6></li>
-                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="2500-7500" data-cap="3000-10000" data-gross="3000">REACT 3000-10000</h6></li>
+                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="500" data-cap="750" data-gross="1000" data-model="REACT 750" data-modelId="1">REACT 750</h6></li>
+                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="750" data-cap="1000" data-gross="2000" data-model="REACT 1000" data-modelId="2">REACT 1000</h6></li>
+                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="1500" data-cap="1500" data-gross="2000" data-model="REACT 2000" data-modelId="3">REACT 2000</h6></li>
+                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="2000" data-cap="2500" data-gross="2500" data-model="REACT 2500" data-modelId="4">REACT 2500</h6></li>
+                                            <li class="list-inline-item"><h6 class="btn btn-success btn-size modelselect" data-working="2500-7500" data-cap="3000-10000" data-gross="3000" data-model="REACT 3000-10000" data-modelId="5">REACT 3000-10000</h6></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -136,10 +136,12 @@ for (var i = 0; i < buttons.length; i++) {
     var working = this.getAttribute("data-working");
     var capacity = this.getAttribute("data-cap");
     var gross = this.getAttribute("data-gross");
+    var model = this.getAttribute("data-model");
     
     document.getElementById("cap").innerHTML=working
     document.getElementById("work").innerHTML=capacity
     document.getElementById("gross").innerHTML=gross
+    document.getElementById("enquiremodel").innerHTML="Model : "+model
   });
 }
 
@@ -367,6 +369,9 @@ for (var i = 0; i < buttons.length; i++) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                    <div class="input-group mb-2">
+                        <strong id="enquiremodel">Model Number : </strong>
+                    </div>
                     <div class="input-group mb-2">
                         <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Your Name">
                     </div>
