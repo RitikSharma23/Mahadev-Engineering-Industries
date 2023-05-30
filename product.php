@@ -32,7 +32,10 @@ https://templatemo.com/tm-559-zay-shop
 <body>
 
 
+<?php
+include "header.php";
 
+?>
 
 
     <!-- Open Content -->
